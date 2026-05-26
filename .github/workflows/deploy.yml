@@ -45,8 +45,8 @@ jobs:
             echo "2. Crear archivo .env desde GitHub Secret"
             echo "========================================"
             cat > "\$ENV_FILE" << 'ENVEOF'
-${{ secrets.PHPMYADMIN_ENV }}
-ENVEOF
+            ${{ secrets.PHPMYADMIN_ENV }}
+            ENVEOF
 
             chmod 600 "\$ENV_FILE"
 
